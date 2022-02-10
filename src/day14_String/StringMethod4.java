@@ -9,13 +9,13 @@ public class StringMethod4 {
         System.out.println(str2);
 
         String s1 = "Wooden Spoon "; //Wooden SpoonWooden Spoon
-        String s2 = s1.repeat(100);
+        String s2 = s1.repeat(10)+"\n"+s1.repeat(10)+"\n"+s1.repeat(10)+"\n"+s1.repeat(10);
 
         System.out.println(s2);
 
         System.out.println("------------------------------------------");
 
-        System.out.println( "FADY\n".repeat(15) );
+        System.out.println( ("FADY ".repeat(15)+"\n").repeat(10) );
 
         System.out.println("-------------------------");
 

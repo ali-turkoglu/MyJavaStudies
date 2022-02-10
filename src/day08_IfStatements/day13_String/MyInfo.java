@@ -1,4 +1,4 @@
-package day13_String;
+package day08_IfStatements.day13_String;
 
 import javax.lang.model.SourceVersion;
 import java.util.Scanner;
