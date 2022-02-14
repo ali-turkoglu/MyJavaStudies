@@ -1,4 +1,4 @@
-package day08_IfStatements.day13_String;
+package day13_String;
 
 import java.util.Scanner;
 

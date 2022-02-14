@@ -1,4 +1,4 @@
-package day08_IfStatements.day13_String;
+package day13_String;
 
 public class StringMethods {
     public static void main(String[] args) {
