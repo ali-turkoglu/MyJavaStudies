@@ -4,24 +4,18 @@ import java.util.Scanner;
 
 public class test {
     public static void main(String[] args) {
+        String s1 = "abc";
+        String s2 = "abc";
 
-        Scanner scan = new Scanner(System.in);
-        String word = scan.next();
-
-        String word2="";
-
-        if( word.toLowerCase().charAt(0)=='x'){
-            word2=word.substring(1);
-        }else if(word.toLowerCase().charAt(0)=='x'&&word.toLowerCase().charAt(word.length()-1)=='x'){
-            word2=word.substring(1,word.length()-1);
-        }else if(word.toLowerCase().charAt(word.length()-1)=='x'){
-            word2=word.substring(0,word.length()-1);
-        }
-
-        System.out.println(word2);
-
-
+        System.out.println("s1 == s2 = " + s1 == s2);
+        System.out.println("s1 == s2 = " + (s1 == s2));
+        System.out.println(s1 == s2);
 
     }
 
 }
+/*
+We'll say that a "triple" in a string is a char appearing three times in a row.
+Print out the number of triples in the given string. The triples may overlap.
+
+ */
