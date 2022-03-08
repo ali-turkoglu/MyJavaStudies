@@ -1,9 +1,11 @@
 package day20_Arrays;
 
 import java.util.Arrays;
+import java.util.Scanner;
 
 public class ArraysUtility {
     public static void main(String[] args) {
+
 
         int[] numbers={10,5,9,45,54,73,15};
 
