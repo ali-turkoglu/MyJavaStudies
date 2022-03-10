@@ -1,4 +1,4 @@
-package day23_CustomMethods;
+package day23_CustomMethods_Void;
 
 import java.util.Arrays;
 

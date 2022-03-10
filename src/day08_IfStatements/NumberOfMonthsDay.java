@@ -1,4 +1,4 @@
-package day08_SingleIf;
+package day08_IfStatements;
 
 public class NumberOfMonthsDay {
     public static void main(String[] args) {

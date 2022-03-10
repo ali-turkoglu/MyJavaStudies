@@ -1,4 +1,4 @@
-package day23_CustomMethods.tasks;
+package day23_CustomMethods_Void.tasks;
 
 import java.util.Scanner;
 
