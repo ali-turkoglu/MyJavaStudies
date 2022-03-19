@@ -6,6 +6,8 @@ public class DifferenceOfMaxMin {
         int[] arr={1,2,3,4,5,6,8};
         System.out.println(differenceOfMaxAndMin(arr));
 
+        System.out.println(CountOfEven.countOfEven(arr));
+
     }
 
     public static int differenceOfMaxAndMin(int[] array){
