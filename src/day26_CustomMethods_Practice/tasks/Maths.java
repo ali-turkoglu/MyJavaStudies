@@ -1,7 +1,57 @@
-package utilities;
+package day26_CustomMethods_Practice.tasks;
 
-public class MathUtility {
+public class Maths {
 
+    public static void main(String[] args) {
+
+        int a = 12;
+        int b = 4;
+        System.out.println(sum(a, b));
+        System.out.println(subtract(a, b));
+        System.out.println(multiply(a, b));
+        System.out.println(divide(a, b));
+
+        System.out.println("-------------------------------------------------------------------------");
+
+        double d1 = 2.4;
+        double d2 = 1.3;
+        System.out.println(sum(d1, d2));
+        System.out.println(subtract(d1, d2));
+        System.out.println(multiply(d1, d2));
+        System.out.println(divide(d1, d2));
+
+        System.out.println("-------------------------------------------------------------------");
+
+        System.out.println("21 isEven: " + isEven(21));
+        System.out.println("28 isEven: " + isEven(28));
+
+        System.out.println("----------------------------------------------------------------------");
+
+        System.out.println("21 isOdd: " + isOdd(21));
+        System.out.println("28 isOdd: " + isOdd(28));
+
+        System.out.println("---------------------------------------------------------------------");
+
+        System.out.println("max number: " + maxOfTwo(154, 66));
+
+        System.out.println("-----------------------------------------------------------------------");
+
+        System.out.println("min number: " + minOfTwo(43.4, 221.4));
+
+        System.out.println("---------------------------------------------------------------------");
+
+        System.out.println("square of 9 :" + square(9));
+        System.out.println("square of 6 :" + square(6));
+        System.out.println("square of 2.5 : " + square(2.5));
+
+
+        System.out.println("------------------------------------------------------------------------");
+
+        System.out.println("cube of 3 : " + cube(3));
+        System.out.println("cube of 3.3 : "+ cube(3.3));
+
+
+    }
 
     // sum of two int number, returns int
     public static int sum(int num1, int num2) {
@@ -133,8 +183,6 @@ public class MathUtility {
     public static double cube(double num) {
         return num * num * num;
     }
-
-
 
 
 }

@@ -472,10 +472,289 @@ public class ArraysUtility {
     }
 
 
+    // replace the element of the array at given index with the new element
+    public static int[] replace(int[] array,int index,int newElement){
+
+        if (index>array.length||index<0){
+            System.err.println("Invalid Index: "+index);;
+            System.exit(0);
+        }
+        array[index]=newElement;
+        return array;
+    }
 
 
-    //removeDuplicates
+    // replace the element of the array at given index with the new element
+    public static double[] replace(double[] array,int index,double newElement){
+
+        if (index>array.length||index<0){
+            System.err.println("Invalid Index: "+index);;
+            System.exit(0);
+        }
+        array[index]=newElement;
+        return array;
+    }
 
 
-    
+    // replace the element of the array at given index with the new element
+    public static char[] replace(char[] array,int index,char newElement){
+
+        if (index>array.length||index<0){
+            System.err.println("Invalid Index: "+index);;
+            System.exit(0);
+        }
+        array[index]=newElement;
+        return array;
+    }
+
+
+    // replace the element of the array at given index with the new element
+    public static String[] replace(String[] array,int index,String newElement){
+
+        if (index>array.length||index<0){
+            System.err.println("Invalid Index: "+index);;
+            System.exit(0);
+        }
+        array[index]=newElement;
+        return array;
+    }
+
+
+    // replaces all the matching old values of the array with the new value
+    public static int[] replaceAll(int[] array,int oldValue,int newValue){
+
+        for (int i = 0; i < array.length; i++) {
+            if (array[i]==oldValue){
+                array[i]=newValue;
+            }
+        }
+        return array;
+    }
+
+
+    // replaces all the matching old values of the array with the new value
+    public static double[] replaceAll(double[] array,double oldValue,double newValue){
+
+        for (int i = 0; i < array.length; i++) {
+            if (array[i]==oldValue){
+                array[i]=newValue;
+            }
+        }
+        return array;
+    }
+
+
+    // replaces all the matching old values of the array with the new value
+    public static String[] replaceAll(String[] array,String oldValue,String newValue){
+
+        for (int i = 0; i < array.length; i++) {
+            if (array[i].equals(oldValue)){
+                array[i]=newValue;
+            }
+        }
+        return array;
+    }
+
+
+    // replaces all the matching old values of the array with the new value
+    public static char[] replaceAll(char[] array,char oldValue,char newValue){
+
+        for (int i = 0; i < array.length; i++) {
+            if (array[i]==oldValue){
+                array[i]=newValue;
+            }
+        }
+        return array;
+    }
+
+
+    // removes the duplicates from the given array, returns the new array
+    public static int[] removeDuplicates(int[] array){
+
+        int [] result={};
+
+        for (int each : array) {
+            if (!ArraysUtility.contains(result,each)){
+                result=ArraysUtility.addElement(result,each);
+            }
+        }
+        return result;
+    }
+
+
+    // removes the duplicates from the given array, returns the new array
+    public static double[] removeDuplicates(double[] array){
+
+        double [] result={};
+
+        for (double each : array) {
+            if (!ArraysUtility.contains(result,each)){
+                result=ArraysUtility.addElement(result,each);
+            }
+        }
+        return result;
+    }
+
+
+    // removes the duplicates from the given array, returns the new array
+    public static char[] removeDuplicates(char[] array){
+
+        char [] result={};
+
+        for (char each : array) {
+            if (!ArraysUtility.contains(result,each)){
+                result=ArraysUtility.addElement(result,each);
+            }
+        }
+        return result;
+    }
+
+
+    // removes the duplicates from the given array, returns the new array
+    public static String[] removeDuplicates(String[] array){
+
+        String [] result={};
+
+        for (String each : array) {
+            if (!ArraysUtility.contains(result,each)){
+                result=ArraysUtility.addElement(result,each);
+            }
+        }
+        return result;
+    }
+
+
+    // insert the given newElement to the given index of the array and returns the new array
+    public static int[] insert(int[] array,int index, int newElement){
+        if (index>array.length-1||index<0){
+            System.err.println("Invalid Index: "+ index);
+            System.exit(0);
+        }
+
+        int[] result=new int[array.length+1];
+        for (int i = 0; i < array.length; i++) {
+            if (i==index){
+                result [i]=newElement;
+                result[i+1]=array[i];
+            }else if(i<index){
+                result[i]=array[i];
+            }else{
+                result[i+1]=array[i];
+            }
+        }
+        return result;
+    }
+
+
+    // insert the given newElement to the given index of the array and returns the new array
+    public static double[] insert(double[] array, int index, double element){
+
+        if(index < 0 || index >= array.length){
+            System.err.println("Invalid Index: "+index);
+            System.exit(0);
+        }
+
+        double[] result = new double[array.length+1];
+        result[index] = element;
+
+        for (int i = 0, j = 0; i < array.length; i++, j++) {
+            if(i == index){
+                j++;
+            }
+            result[j] = array[i];
+        }
+
+        return result;
+    }
+
+
+    // insert the given newElement to the given index of the array and returns the new array
+    public static char[] insert(char[] array, int index, char element){
+
+        if(index < 0 || index >= array.length){
+            System.err.println("Invalid Index: "+index);
+            System.exit(0);
+        }
+
+        char[] result = new char[array.length+1];
+        result[index] = element;
+
+        for (int i = 0, j = 0; i < array.length; i++, j++) {
+            if(i == index){
+                j++;
+            }
+            result[j] = array[i];
+        }
+
+        return result;
+    }
+
+
+    // insert the given newElement to the given index of the array and returns the new array
+    public static String[] insert(String[] array, int index, String element){
+
+        if(index < 0 || index >= array.length){
+            System.err.println("Invalid Index: "+index);
+            System.exit(0);
+        }
+
+        String[] result = new String[array.length+1];
+        result[index] = element;
+
+        for (int i = 0, j = 0; i < array.length; i++, j++) {
+            if(i == index){
+                j++;
+            }
+            result[j] = array[i];
+        }
+
+        return result;
+    }
+
+
+    // swap the given elements to the given indexes of array, returns new array
+    public static int[] swap(int[] array,int index1,int index2){
+
+        if (index1<0||index2<0||index1>=array.length||index2>=array.length){
+            System.err.println("Invalid index: "+index1+" - "+index2);
+            System.exit(0);
+        }
+
+        int temp=array[index1];
+        array[index1]=array[index2];
+        array[index2]=temp;
+        return array;
+    }
+
+
+    // swap the given elements to the given indexes of array, returns new array
+    public static double[] swap(double[] array, int i, int j){
+        double temp = array[i];
+        array[i] = array[j];
+        array[j] = temp;
+        return array;
+    }
+
+
+    // swap the given elements to the given indexes of array, returns new array
+    public static char[] swap(char[] array, int i, int j){
+        char temp = array[i];
+        array[i] = array[j];
+        array[j] = temp;
+        return array;
+    }
+
+
+    // swap the given elements to the given indexes of array, returns new array
+    public static String[] swap(String[] array, int i, int j){
+        String temp = array[i];
+        array[i] = array[j];
+        array[j] = temp;
+        return array;
+    }
+
+
+
+
+
 }

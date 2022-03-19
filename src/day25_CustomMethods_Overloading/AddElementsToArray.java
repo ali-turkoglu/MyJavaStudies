@@ -12,7 +12,7 @@ public class AddElementsToArray {
         System.out.println(Arrays.toString(array));
 
         double[] array2={12.3,54.61,54.6};
-        System.out.println(Arrays.toString(adddouble(array2,22.4)));
+        System.out.println(Arrays.toString(addDouble(array2,22.4)));
 
         char[] array3={'a','b','c','d'};
         System.out.println(Arrays.toString(addChar(array3,'e')));
@@ -36,7 +36,7 @@ public class AddElementsToArray {
         return newArray;
     }
 
-    public static double[] adddouble(double[] arr1,double element){
+    public static double[] addDouble(double[] arr1,double element){
 
         double[] newArray=new double[arr1.length+1];
 
