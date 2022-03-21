@@ -1,5 +1,6 @@
 package utilities;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 
 public class ArraysUtility {
@@ -754,7 +755,34 @@ public class ArraysUtility {
     }
 
 
+    // convert array to ArrayList, return Integer ArrayList
+    public static ArrayList<Integer> convertArrayToArrayList(int[] array){
+        ArrayList<Integer> list=new ArrayList<>();
+        for (int each : array) {
+            list.add(each);
+        }
+        return list;
+    }
 
+
+    // convert array to ArrayList, returns Double ArrayList
+    public static ArrayList<Double> convertArrayToArrayList(double[] array){
+        ArrayList<Double> list=new ArrayList<>();
+        for (double each : array) {
+            list.add(each);
+        }
+        return list;
+    }
+
+
+    // convert array to ArrayList, returns Character ArrayList
+    public static ArrayList<Character> convertArrayToArrayList(char[] array){
+        ArrayList<Character> list=new ArrayList<>();
+        for (char each : array) {
+            list.add(each);
+        }
+        return list;
+    }
 
 
 }
