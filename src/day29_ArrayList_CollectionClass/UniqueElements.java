@@ -18,9 +18,11 @@ public class UniqueElements {
             if (frequency==1){
                 unique.add(each);
             }
-
         }
         System.out.println("unique = " + unique);
+
+        System.out.println("------------------------------------------------------------------------");
+
 
         ArrayList<Integer> list5=new ArrayList<>();
         list5.addAll(Arrays.asList(10,10,20,30,30,30,40,50,60,70));
