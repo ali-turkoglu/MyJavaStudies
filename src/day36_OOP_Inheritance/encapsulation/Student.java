@@ -57,7 +57,7 @@ public class Student {
 
     public void setGrade(char grade) {
         if (!(grade=='A' || grade=='B' || grade=='C' || grade=='D' || grade=='E' || grade=='F' )){
-            System.err.println("Invalid gender parameter: "+grade);
+            System.err.println("Invalid grade parameter: "+grade);
             return;
         }
         this.grade = grade;
@@ -81,6 +81,7 @@ public class Student {
                 '}';
     }
 }
+
 /*
 Create a class named Student:
 			private variables:
