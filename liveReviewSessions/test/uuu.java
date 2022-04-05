@@ -1,18 +1,24 @@
 package test;
 
+import day34_GarbageCollection_AccessModifiers.Constructor_vs_StaticBlock;
+import day34_GarbageCollection_AccessModifiers.Test;
+
 public class uuu {
 
+   public uuu(){
+       System.out.println("dev");
+   }
+
+   public void uuu(){
+
+       System.out.println("sdet ");
+   }
+
+
+
     public static void main(String[] args) {
-
-        int x= 7;
-        if(available(x)) {                // Line 1
-            System.out.println("Java SE");
-        }else {
-            System.out.println("Java EE");
-        }
+        uuu obj=new uuu();
 
     }
-    public static boolean available(int x) {
-        return x > 1 ? true : false;
-    }
+
 }
