@@ -4,18 +4,21 @@ import java.util.ArrayList;
 import java.util.Arrays;
 
 public class ScrumTeam {
-    public String PO;
-    public String BA;
-    public String SM;
-    public ArrayList<Tester> testers=new ArrayList<>();
-    public ArrayList<Developer> developers=new ArrayList<>();
 
-    public ScrumTeam(){//ProductOwner PO, String BA, String SM, ArrayList<Tester> testers, ArrayList<Developer> developers) {
+    public ProductOwner PO;
+    public BusinessAnalyst BA;
+    public ScrumMaster SM;
+
+    public ArrayList<Tester> testers=new ArrayList<>();  // in constructor or here we create an object to store data
+    public ArrayList<Developer> developers=new ArrayList<>();
+    // birden fazla tester ve developer olduğu için ArrayList kullanıyoruz. ArrayList dynamic ve biz kolayca ekleyip çıkarabiliriz bu listeden
+
+
+    public ScrumTeam(){//ProductOwner PO, String BA, String SM) {
         this.PO =PO;
         this.BA = BA;
         this.SM = SM;
-        this.testers = testers;
-        this.developers = developers;
+
     }
 
     public void addTester(Tester tester){
