@@ -6,7 +6,7 @@ public class Person {
     public int age;
     public char gender;
 
-    public void setInfo(String name, int age, char gender) {
+    public Person(String name, int age, char gender) {
         this.name = name;
         this.age = age;
         this.gender = gender;
@@ -40,18 +40,7 @@ public class Person {
         drink(String drink)
         toString()
 
-        2. Create a sub class of Person named Employee
-        Extra variables:
-        id, jobTitle, salary
-
-        Extra methods:
-        SetInfo(): sets the name, age, gender, id, jobTitle and salary of Employee Object
-        Hint: after creating setInfo method of employee class, you can call the inheritend setInfo() to set the name, age, and gender
-
-        work()
-
-        toString(): generate toString seperately in Employee class so that name, age, gender, id, jobTitle and salary of the emplyee can be displayed
-
+        2.
 
 	3. Create a sub class of Employee named Tester:
 
