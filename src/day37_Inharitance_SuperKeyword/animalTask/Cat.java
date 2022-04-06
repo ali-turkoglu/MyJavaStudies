@@ -2,11 +2,11 @@ package day37_Inharitance_SuperKeyword.animalTask;
 
 public class Cat extends Animal{
 
-    public String a;
+    public String scratch;
 
-    public Cat(String a,String name, String breed, char gender, int age, String size, String color){
+    public Cat(String scratch,String name, String breed, char gender, int age, String size, String color){
         super(name,breed,gender,age,size,color);
-        this.a=a;
+        this.scratch=scratch;
     }
 
     public void scratch(){

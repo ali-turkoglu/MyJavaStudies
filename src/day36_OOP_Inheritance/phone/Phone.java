@@ -5,7 +5,13 @@ public class Phone {
     public String brand,model,size,color;
     public double price;
 
-    public void setInfo(String brand, String model, String size, String color, double price) {
+    public static boolean hasBattery;
+
+    static {
+        hasBattery=true;
+    }
+
+    public Phone(String brand, String model, String size, String color, double price) {
         this.brand = brand;
         this.model = model;
         this.size = size;
@@ -14,7 +20,7 @@ public class Phone {
     }
 
     public void call(long phoneNumber){
-        System.out.println(brand+" is calling " +phoneNumber);
+        System.out.println(brand+" "+model+" is calling " +phoneNumber);
     }
 
     public void text(long phoneNumber){
@@ -27,7 +33,8 @@ public class Phone {
                 ", model='" + model + '\'' +
                 ", size='" + size + '\'' +
                 ", color='" + color + '\'' +
-                ", price=" + price +
+                ", has battery" + hasBattery +
+                ", price= $" + price +
                 '}';
     }
 }
