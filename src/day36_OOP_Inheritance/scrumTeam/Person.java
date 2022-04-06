@@ -1,4 +1,4 @@
-package day36_OOP_Inheritance.$scrumTeam;
+package day36_OOP_Inheritance.scrumTeam;
 
 public class Person {
 

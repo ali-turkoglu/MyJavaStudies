@@ -1,4 +1,4 @@
-package day36_OOP_Inheritance.$scrumTeam;
+package day36_OOP_Inheritance.scrumTeam;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -14,7 +14,7 @@ public class ScrumTeam {
     // birden fazla tester ve developer olduğu için ArrayList kullanıyoruz. ArrayList dynamic ve biz kolayca ekleyip çıkarabiliriz bu listeden
 
 
-    public ScrumTeam(){//ProductOwner PO, String BA, String SM) {
+    public ScrumTeam(ProductOwner PO, BusinessAnalyst BA, ScrumMaster SM) {
         this.PO =PO;
         this.BA = BA;
         this.SM = SM;
@@ -25,7 +25,7 @@ public class ScrumTeam {
         testers.add(tester);
     }
 
-    public void ddTesters(Tester[] testers){
+    public void addTesters(Tester[] testers){
         this.testers.addAll(Arrays.asList(testers));
     }
 
@@ -37,7 +37,7 @@ public class ScrumTeam {
         developers.add(developer);
     }
 
-    public void ddDevelopers(Developer [] developers){
+    public void addDevelopers(Developer [] developers){
         this.developers.addAll(Arrays.asList(developers));
     }
 
@@ -47,11 +47,11 @@ public class ScrumTeam {
 
     public String toString() {
         return "ScrumTeam{" +
-                "PO='" + PO + '\'' +
-                ", BA='" + BA + '\'' +
-                ", SM='" + SM + '\'' +
-                ", number of testers=" + testers.size() +
-                ", number of developers=" + developers.size() +
+                "PO= " + PO.name +
+                ", BA= " + BA.name +
+                ", SM= " + SM.name +
+                ", Number of testers= " + testers.size() +
+                ", Number of developers= " + developers.size() +
                 '}';
     }
 }

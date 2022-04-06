@@ -1,4 +1,4 @@
-package day36_OOP_Inheritance.$scrumTeam;
+package day36_OOP_Inheritance.scrumTeam;
 
 public class Employee extends Person {  // Employee IS A Person
 
@@ -22,10 +22,10 @@ public class Employee extends Person {  // Employee IS A Person
 
     public String toString() {
         return "Employee{" +
-                ", name= '" + name + '\'' +
+                " name= '" + name + '\'' +
                 ", age= " + age +
                 ", gender= " + gender +
-                "ID= " + ID +
+                ", ID= " + ID +
                 ", jobTitle= '" + jobTitle + '\'' +
                 ", salary= $" + salary +
                 ", companyName= '" + companyName + '\'' +
