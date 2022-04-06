@@ -2,8 +2,8 @@ package day36_OOP_Inheritance.phone;
 
 public class Iphone extends Phone{
 
-    public Iphone(String brand, String model, String size, String color, double price){
-        super(brand, model, size, color, price);
+    public Iphone( String model, String size, String color, double price){
+        super("Apple", model, size, color, price);
     }
 
     public void faceTime(long phoneNumber){
