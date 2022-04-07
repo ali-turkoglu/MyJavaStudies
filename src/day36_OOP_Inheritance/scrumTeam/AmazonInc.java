@@ -5,7 +5,7 @@ public class AmazonInc {
     public static void main(String[] args) {
 
         String company="Amazon Inc";
-        ProductOwner PO=new ProductOwner("Suhaib",45,'M',345,120000,company);
+        ProductOwner PO=new ProductOwner("Suhaib",45,'M',345,120000, company);
         ScrumMaster SM=new ScrumMaster("Cihad",34,'M',234,110000,company);
         BusinessAnalyst BA=new BusinessAnalyst("Anel",25,'F',432,124000,company);
 
@@ -20,6 +20,7 @@ public class AmazonInc {
 
         ScrumTeam ST1=new ScrumTeam(PO,BA,SM);
         System.out.println(ST1);
+
 
         ST1.addDevelopers(devList);
         ST1.addTesters(testerList);
