@@ -1,6 +1,6 @@
 package day35_OPP_Encapsulation.tasks;
 
-public class $PizzaObject {
+public class PizzaObject {
 
     public static void main(String[] args) {
 

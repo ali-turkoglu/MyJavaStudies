@@ -4,7 +4,7 @@ public class ItemObjects {
 
     public static void main(String[] args) {
 
-        $Item makarna=new $Item("makarna",7.5,3);
+        Item makarna=new Item("makarna",7.5,3);
         System.out.println(makarna);
 
 
@@ -14,7 +14,7 @@ public class ItemObjects {
         System.out.println(makarna);
 
 
-        $Item tk=new $Item("toilet paper",70,1);
+        Item tk=new Item("toilet paper",70,1);
         System.out.println(tk.getQuantity());
 
     }

@@ -33,10 +33,24 @@ public class Pizza {
         if (numberOfCheeseTopping<0){
             return;
         }
-        if ((size.equals("small")&&numberOfCheeseTopping>3 )|| (size.equals("medium")&&numberOfCheeseTopping>4) || (size.equals("large") && numberOfCheeseTopping>5)){
-            return;
+        if (size.equalsIgnoreCase("small") && numberOfCheeseTopping<=3 || size.equalsIgnoreCase("medium") && numberOfCheeseTopping<=4 || size.equalsIgnoreCase("large") && numberOfCheeseTopping<=5){
+            this.numberOfCheeseTopping = numberOfCheeseTopping;
+
         }
-        this.numberOfCheeseTopping = numberOfCheeseTopping;
+        System.out.println("Invalid number of cheese topping");
+        System.exit(1);
+
+   /*     if(size.equalsIgnoreCase("small") && numberOfCheeseTopping <= 3){
+            this.numberOfCheeseTopping = numberOfCheeseTopping;
+        }else if(size.equalsIgnoreCase("medium") && numberOfCheeseTopping <= 4){
+            this.numberOfCheeseTopping = numberOfCheeseTopping;
+        }else if(size.equalsIgnoreCase("medium") && numberOfCheeseTopping <= 5){
+            this.numberOfCheeseTopping = numberOfCheeseTopping;
+        }else{
+            System.out.println("Invalid number of cheese topping: "+numberOfCheeseTopping);
+            System.exit(1);
+        }*/
+
     }
 
     public int getNumberOfPepperoniTopping() {

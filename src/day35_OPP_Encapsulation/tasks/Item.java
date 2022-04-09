@@ -1,6 +1,6 @@
 package day35_OPP_Encapsulation.tasks;
 
-public class $Item {
+public class Item {
 
     private String name;
     private double unitPrice;
@@ -11,17 +11,23 @@ public class $Item {
     }
 
     public void setName(String name) {
-        if (name.isEmpty()) {
+        if (name.isEmpty()|| name.isBlank() || name == null) {
             System.err.println("Invalid Entry: " + name);
             return;
         }
+        String specialChars="";
         char[] ch = name.toCharArray();
         for (char each : ch) {
-            if (!(each<='z'&&each>='a'&&each==' '&& each>=0&&each<=9 || each<='Z'&&each>='A'&&each==' ')) {
-                System.err.println("Invalid Entry: test " + name);
+            if (!Character.isLetterOrDigit(each) && each!=' '){ // getting all special character except for space
+                specialChars+=each;
                 return;
             }
         }
+        if(specialChars.length() > 0){ // if contains special characters other than space
+            System.err.println("Invalid Name: "+name);
+            System.exit(1);
+        }
+
         if (!(Character.isLetter(ch[0]))) {
             System.err.println("Invalid Entry: " + name);
             return;
@@ -47,23 +53,22 @@ public class $Item {
     }
 
     public void setQuantity(int quantity) {
-        if (quantity < 0) {
+        if (quantity <= 0) {
             System.err.println("Invalid Entry: " + quantity);
             return;
         }
 
-       if (name.equals("toilet paper") && quantity != 1) {
-            //System.err.println("Invalid Entry: " + quantity);
-            //return;
-            System.out.println("ok");
+       if (name.equalsIgnoreCase("toilet paper")) {
+           this.quantity=1;
+
         }
         this.quantity = quantity;
     }
 
-    public $Item(String name, double unitPrice, int quantity) {
+    public Item(String name, double unitPrice, int quantity) {
         setName(name);
         setUnitPrice(unitPrice);
-        //setQuantity(quantity);
+        setQuantity(quantity);
     }
 
     public double calcCost() {
