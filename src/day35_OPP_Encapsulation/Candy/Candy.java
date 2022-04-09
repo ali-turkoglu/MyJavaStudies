@@ -8,10 +8,10 @@ public class Candy {
     private boolean hasPeanuts;
 
     public Candy(String brand, int quantity, double price, boolean hasPeanuts) {
-        this.brand = brand;
-        this.quantity = quantity;
-        this.price = price;
-        this.hasPeanuts = hasPeanuts;
+        setBrand(brand);
+        setQuantity(quantity);
+        setPrice(price);
+        setHasPeanuts(hasPeanuts);
     }
 
     public String getBrand() {
@@ -35,20 +35,37 @@ public class Candy {
     }
 
     public void setQuantity(int quantity) {
-        if (quantity<=0){
-            System.exit(1);
+        if (quantity <= 0) {
+            return;
         }
         this.quantity = quantity;
     }
 
     public void setPrice(double price) {
-        if (price<0){
-            System.exit(1);
+        if (price < 0) {
+          return;
         }
+
         this.price = price;
     }
 
+
     public void setHasPeanuts(boolean hasPeanuts) {
         this.hasPeanuts = hasPeanuts;
+    }
+
+    public double calcCost() {
+        return quantity * price;
+    }
+
+    public String toString() {
+
+        return "Candy{" +
+                "brand='" + brand + '\'' +
+                ", quantity=" + quantity +
+                ", unit price=$" + ((price==0.0)?"free":price) +
+                ", total price=" + ((calcCost() == 0) ? "free" : '$' + price) +
+                ", hasPeanuts=" + hasPeanuts +
+                '}';
     }
 }
