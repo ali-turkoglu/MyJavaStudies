@@ -1,12 +1,14 @@
 #JAVA OOP Concepts ##Encapsulation ###What is Encapsulation?
 
-Data Hiding
-Hiding the data by providing private access modifiers
-How do we perform? (PIQ)
-make all class fields private
-create public getter: to read the data
-create public setter: to write the data
-Encapsulation helps us to manipulate the data field with certain conditions(we will apply this concept with Singleton Driver Class Design)
+1. Data Hiding
+    -Hiding the data by providing private access modifiers
+2. How do we perform? (PIQ)
+    -make all class fields private
+    -create public getter: to read the data
+    -create public setter: to write the data
+3. Encapsulation helps us to manipulate the data field with certain conditions(we will apply this concept with Singleton Driver Class Design)
+4. conditions in setter method, we usually customize getter method output format, return the data in a certain format
+
 ###Read Only
 
 Only provide getter to your class, and it will be Read-Only (immutable: not changing) ###Write Only

@@ -1,4 +1,4 @@
-package week13;
+package week13.encapsulation;
 
 public class Credentials {
     private String userName = "A12345678"; // instance fields
