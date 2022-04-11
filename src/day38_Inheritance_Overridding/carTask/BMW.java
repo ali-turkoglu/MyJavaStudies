@@ -10,4 +10,10 @@ public class BMW extends Car{
     public void breakDown(){
         System.out.println(brand+" breaks down commanly");
     }
+
+    @Override
+    public void start() {
+        super.start();
+        System.out.println("Plug the card to start"+brand+" "+model);
+    }
 }
