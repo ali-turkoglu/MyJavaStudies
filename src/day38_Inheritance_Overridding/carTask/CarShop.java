@@ -1,5 +1,7 @@
 package day38_Inheritance_Overridding.carTask;
 
+import java.util.ArrayList;
+
 public class CarShop {
 
     public static void main(String[] args) {
@@ -10,6 +12,19 @@ public class CarShop {
         BMW bmw1=new BMW("i5",2014,23000,"red",65000);
 
         Tesla tesla1=new Tesla("3",2021,89000,"white",15000);
+
+
+        tesla1.autoPilot();
+        tesla1.drive();
+        System.out.println("tesla1.model = " + tesla1.model);
+
+        toyota1.reliable();
+        toyota1.drive();
+
+        System.out.println("tesla1 = " + tesla1);
+        System.out.println("bmw1 = " + bmw1);
+        System.out.println("toyota1 = " + toyota1);
+        System.out.println("toyota2 = " + toyota2);
 
 
     }
