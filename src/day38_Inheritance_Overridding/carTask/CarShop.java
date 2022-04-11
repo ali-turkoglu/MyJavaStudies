@@ -26,6 +26,10 @@ public class CarShop {
         System.out.println("toyota1 = " + toyota1);
         System.out.println("toyota2 = " + toyota2);
 
+        toyota1.start();
+        tesla1.start();
+        bmw1.start();
+
 
     }
 }
