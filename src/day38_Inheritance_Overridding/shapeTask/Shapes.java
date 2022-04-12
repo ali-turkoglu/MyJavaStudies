@@ -36,17 +36,14 @@ public class Shapes {
         return 0;
     }
 
-    public static void main(String[] args) {
-
-        Circle c1=new Circle(5);
-
-        Square s1=new Square(5);
-
-        Rectangular r1=new Rectangular(5,7);
-
-        System.out.println("r1 = " + r1);
-        System.out.println("s1 = " + s1);
-        System.out.println("c1 = " + c1);
-        
+    @Override
+    public String toString() {
+        return "Shapes{" +
+                "name='" + name + '\'' +
+                ", area='" + area() + '\'' +
+                ", perimeter='" + perimeter() + '\'' +
+                '}';
     }
+
+
 }
