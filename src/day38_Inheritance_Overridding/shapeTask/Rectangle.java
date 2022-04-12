@@ -1,16 +1,14 @@
 package day38_Inheritance_Overridding.shapeTask;
 
-import java.lang.reflect.Constructor;
-
-public class Rectangular extends Shapes{
+public class Rectangle extends Shapes{
 
     private double width;
     private double length;
 
-    public Rectangular(double width, double length) {
-        super("Rectangular");
-        this.width = width;
-        this.length = length;
+    public Rectangle(double width, double length) {
+        super("Rectangle");
+        setWidth(width);
+        setLength(length);
     }
 
     public double getWidth() {
@@ -20,7 +18,7 @@ public class Rectangular extends Shapes{
     public void setWidth(double width) {
         if (width<=0){
             System.out.println("Invalid value for width: "+width );
-            return;
+            System.exit(1);
         }
         this.width = width;
     }
@@ -32,7 +30,7 @@ public class Rectangular extends Shapes{
     public void setLength(double length) {
         if (length<=0){
             System.out.println("Invalid value for length: "+ length);
-            return;
+            System.exit(1);
         }
         this.length = length;
     }
@@ -47,7 +45,7 @@ public class Rectangular extends Shapes{
 
     @Override
     public String toString() {
-        return "Rectangular{" +
+        return "Rectangle{" +
                 "width=" + width +
                 ", length=" + length +
                 ", area=" + area() +

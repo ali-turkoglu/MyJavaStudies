@@ -12,8 +12,8 @@ public class Square extends Shapes{
 
     public void setSide(double side) {
         if (side<=0){
-            System.out.println("Invalid side parameter: "+side);
-            return;
+            System.out.println("Invalid side value: "+side);
+            System.exit(1);
         }
         this.side = side;
     }
@@ -28,7 +28,7 @@ public class Square extends Shapes{
     }
 
     public double perimeter(){
-        return 2*side;
+        return 4*side;
     }
 
     public String toString() {
