@@ -1,4 +1,4 @@
-package week14.browserPagesInheritance;
+package week14.browserPages;
 
 public class ProductPage extends AmazonHomePage {
     public int quantity;

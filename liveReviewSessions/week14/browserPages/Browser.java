@@ -1,4 +1,4 @@
-package week14.browserPagesInheritance;
+package week14.browserPages;
 
 import utilities.StringUtility;
 
