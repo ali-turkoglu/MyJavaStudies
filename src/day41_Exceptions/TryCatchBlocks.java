@@ -31,9 +31,24 @@ public class TryCatchBlocks {
             System.out.println("e.getMessage() = " + e.getMessage());
         }
 
-
-
         System.out.println("Test2 completed");
+
+        System.out.println("-----------------------------------------------");
+
+        System.out.println("test3 started");
+
+        try {
+            System.out.println("Cydeo".substring(2,0));
+        }catch (RuntimeException e){
+            e.printStackTrace();
+            System.out.println("e.getMessage() = " + e.getMessage());
+        }
+
+        System.out.println("test3 completed");
+
+
+
+
 
 
     }
