@@ -26,7 +26,9 @@ public class TryCatchBlocks {
             System.out.println(numbers[200]);
             System.out.println("try block");
         }catch (RuntimeException e){
-            System.out.println("catch block");
+            //System.out.println("catch block");
+            e.printStackTrace();
+            System.out.println("e.getMessage() = " + e.getMessage());
         }
 
 
