@@ -40,7 +40,7 @@ public class DisadventageOfThrowsKeyword {
 
        // method2();  //----> buradan çağırdığımızda error veriyor.
        // method3();  // --->  "          "
-        method4();  //  ---> try & catch ile error çözüldüğü için hata vermiyor
+        method4();  //  ---> try & catch ile error çözüldüğü için hata vermiyor başka method dan çağırabiliyoruz
 
 
         String a="Cydeo";
