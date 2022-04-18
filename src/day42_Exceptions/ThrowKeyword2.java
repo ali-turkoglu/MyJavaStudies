@@ -8,5 +8,7 @@ public class ThrowKeyword2 {
 
         throw new NoSuchElementException("There is no such element as break");
 
+        //System.out.println("Hello");  --> bu satıra ulaşılamayacağı için hata veriyor
+
     }
 }
