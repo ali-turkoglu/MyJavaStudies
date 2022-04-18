@@ -42,6 +42,15 @@ public class DisadventageOfThrowsKeyword {
        // method3();  // --->  "          "
         method4();  //  ---> try & catch ile error çözüldüğü için hata vermiyor
 
+
+        String a="Cydeo";
+        try {
+            char ch=a.charAt(10);  // unchecked exception olduğu için try & catch kullanılır sadece
+        }catch (RuntimeException e){
+            e.printStackTrace();
+        }
+
+
     }
 
 

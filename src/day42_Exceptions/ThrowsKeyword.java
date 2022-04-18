@@ -7,5 +7,7 @@ public class ThrowsKeyword {
         System.out.println("Hello");
         Thread.sleep(3000);
         System.out.println("World");
+
+
     }
 }
