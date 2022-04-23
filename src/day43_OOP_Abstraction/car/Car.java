@@ -52,9 +52,7 @@ public abstract class Car {
     }
 
     public abstract void start();
-    public void stop(){
-        System.out.println("Press the brake");
-    }
+    public abstract void stop();//{ System.out.println("Press the brake");  }
 
     @Override
     public String toString() {
