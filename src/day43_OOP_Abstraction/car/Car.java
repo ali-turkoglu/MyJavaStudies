@@ -52,9 +52,20 @@ public abstract class Car {
     }
 
     public abstract void start();
-    public abstract void stop();
+    public void stop(){
+        System.out.println("Press the brake");
+    }
 
-
+    @Override
+    public String toString() {
+        return "Car{" +
+                "make='" + make + '\'' +
+                ", model='" + model + '\'' +
+                ", color='" + color + '\'' +
+                ", year=" + year +
+                ", price=" + price +
+                '}';
+    }
 }
 /*
 Car Task:
