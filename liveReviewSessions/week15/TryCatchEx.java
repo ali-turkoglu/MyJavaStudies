@@ -9,7 +9,7 @@ public class TryCatchEx {
         try {
             System.out.println("10/0");
         }catch (RuntimeException e){
-
+            System.out.println("Arithmetic Exception handled");
         }
         System.out.println("10/3");
 
