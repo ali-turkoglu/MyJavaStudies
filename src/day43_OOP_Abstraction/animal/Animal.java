@@ -2,10 +2,13 @@ package day43_OOP_Abstraction.animal;
 
 public  abstract class Animal {
 
-    private String name,breed;
-    private char gender;
+    private String name;
+    private final String breed;
+    private final char gender;
     private int age;
     private String size,color;
+
+    public final static boolean canBreath; // in static block
 
     public String getName() {
         return name;
@@ -35,14 +38,6 @@ public  abstract class Animal {
         this.name = name;
     }
 
-    public void setBreed(String breed) {
-        this.breed = breed;
-    }
-
-    public void setGender(char gender) {
-        this.gender = gender;
-    }
-
     public void setAge(int age) {
         this.age = age;
     }
@@ -55,10 +50,18 @@ public  abstract class Animal {
         this.color = color;
     }
 
+    static {
+        canBreath=true;
+    }
+
     public Animal(String name, String breed, char gender, int age, String size, String color) {
         setName(name);
-        setBreed(breed);
-        setGender(gender);
+        this.breed=breed;  // diğer instance variable ların şartları setter/getter kullanırken
+                            // final lar burada tanımlanır
+        if (!(gender=='M'||gender=='F')){
+            throw new RuntimeException("Invalid gender: "+ gender);
+        }
+        this.gender = gender;
         setAge(age);
         setSize(size);
         setColor(color);
