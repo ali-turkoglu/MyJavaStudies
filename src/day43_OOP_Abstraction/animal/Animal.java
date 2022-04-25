@@ -71,9 +71,15 @@ public  abstract class Animal {
 
     public abstract void eat();
 
+    public final void drink(){  // abstract class da abstract olmayan method final olabilir
+        System.out.println(getName()+" is drinking");
+    }
+
+
+
     @Override
     public String toString() {
-        return "Animal{" +
+        return getClass().getSimpleName()+"{" + // class ismi değişirse burada o gözükür
                 "name='" + name + '\'' +
                 ", breed='" + breed + '\'' +
                 ", gender=" + gender +
