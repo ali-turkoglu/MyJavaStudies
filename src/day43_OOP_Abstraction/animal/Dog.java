@@ -11,5 +11,9 @@ public class Dog extends Animal{
         System.out.println(getBreed()+" "+getName()+" is eating dog food");
     }
 
+    public void bark(){
+        System.out.println(getName()+" is barking");
+    }
+
 
 }
