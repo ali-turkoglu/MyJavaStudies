@@ -16,17 +16,19 @@ public class Zoo {
 
         dog1.eat();
         dog1.drink();
+        dog1.bark();
 
         cat1.eat();
         cat1.drink();
+        cat1.meow();
 
         parrot1.eat();
         parrot1.drink();
 
         System.out.println("--------------------------------");
 
-        System.out.println(new Zoo().getClass().getSimpleName()); //sadece class name
-        System.out.println(new Zoo().getClass().getName());     // class name path ile birlikte
+        System.out.println(new Zoo().getClass().getSimpleName()); //just class name
+        System.out.println(new Zoo().getClass().getName());     // class name with its path
 
         System.out.println(dog1.getClass().getSimpleName());
         System.out.println(dog1.getClass().getName());

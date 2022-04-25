@@ -11,7 +11,7 @@ public class Cat extends Animal{
         System.out.println(getBreed()+" "+getName()+" is eating cat food");
     }
 
-    public void Meow(){
+    public void meow(){
         System.out.println(getName()+" is meowing");
     }
 
