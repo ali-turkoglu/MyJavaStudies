@@ -1,6 +1,6 @@
 package day43_OOP_Abstraction.animal;
 
-public abstract class Animal {
+public  abstract class Animal {
 
     private String name,breed;
     private char gender;
