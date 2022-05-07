@@ -16,4 +16,9 @@ public class Tiger extends Animal implements WildAnimal{
     public void hunt() {
         System.out.println(getName()+" is hunting");
     }
+
+    @Override
+    public void play() {
+        System.out.println(getName()+" is playing with each-other");
+    }
 }
