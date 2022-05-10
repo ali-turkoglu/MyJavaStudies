@@ -7,6 +7,10 @@ public class ChromeDriver implements WebDriver{
         System.out.println("Launching Chrome Browser");
     }
 
+    void darkMode(){
+        System.out.println("You can change mode");
+    }
+
 
     @Override
     public void get(String url) {
