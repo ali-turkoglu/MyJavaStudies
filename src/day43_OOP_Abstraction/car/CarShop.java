@@ -29,7 +29,12 @@ public class CarShop {
         car1.setPrice(33222);
         System.out.println(car1);
 
+        Car test=new Honda("Civic","Black",2015,25000);
+        System.out.println(test);
 
+
+        Tesla ob=new Tesla("Model3","Blue",2019,55000);
+        ob.start();
 
 
     }

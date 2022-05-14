@@ -27,7 +27,7 @@ public class PolymorphismPractice {
         for (Car each: cars){
 
             if (each instanceof Toyota){
-                if (each.year>=2010 && each.year>=2011){
+                if (each.year>=2010 && each.year<=2011){
                     System.out.println(each);
                 }
             }
@@ -35,7 +35,7 @@ public class PolymorphismPractice {
                     System.out.println(each);
             }
             if (each instanceof Tesla){
-                if (each.year>=2015 && each.year>=2016){
+                if (each.year>=2015 && each.year<=2016){
                     System.out.println(each);
                 }
             }
@@ -55,9 +55,9 @@ public class PolymorphismPractice {
             if (each.miles<carWithLowestMilleage.miles){
                 carWithLowestMilleage=each;
             }
-            System.out.println(carWithLowestMilleage);
         }
         System.out.println(carWithHighestMilleage);
+        System.out.println(carWithLowestMilleage);
 
 
 

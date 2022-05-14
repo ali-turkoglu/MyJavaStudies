@@ -62,14 +62,14 @@ public class PolymorphismPractice2 {
             }
         }
 
-        System.out.println(testerWithMaxSalary);
+        System.out.println("testerWithMaxSalary: "+testerWithMaxSalary);
 
         for (Developer each : developers) {
             if (each.getSalary()>developerWithMaxSalary.getSalary()){
                 developerWithMaxSalary=each;
             }
         }
-        System.out.println(developerWithMaxSalary);
+        System.out.println("developerWithMaxSalary: "+developerWithMaxSalary);
 
 
     }
