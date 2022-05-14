@@ -11,12 +11,12 @@ public class InputField implements WebElement {
 
     @Override
     public void sendKeys(String txt) {
-
+        System.out.println("Typing into input field "+txt);
     }
 
     @Override
     public void click() {
-
+        System.out.println("");
     }
 
     @Override
