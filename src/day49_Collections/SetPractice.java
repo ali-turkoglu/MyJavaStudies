@@ -17,7 +17,9 @@ public class SetPractice {
         arr=set1.toArray(new String[0]);
         */
 
-        System.out.println("arr = " + Arrays.toString(arr));
+        System.out.println("arr  = " + Arrays.toString(arr));
+        System.out.println("arr2 = " + Arrays.toString(arr2));
+        System.out.println("arr3 = " + Arrays.toString(arr3));
 
         System.out.println("------------------------------------------");
 

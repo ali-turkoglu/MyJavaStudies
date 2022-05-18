@@ -16,6 +16,16 @@ public class ListSetPractice {
         List<Integer> list=new ArrayList<>(set);
         System.out.println("list = " + list);
 
+        System.out.println("---------------------------------------");
+
+        List<String > listNames=null;
+        System.out.println("listNames = " + listNames);
+        //System.out.println("listNames.size() = " + listNames.size()); ---> NullPointerException
+
+        Set<String > setNames=null;
+        System.out.println("setNames = " + setNames);
+        //System.out.println("setNames.size() = " + setNames.size());   ---> NullPointerException
+
 
     }
 }

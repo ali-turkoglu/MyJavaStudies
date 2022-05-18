@@ -48,7 +48,7 @@ public class SetPractice2 {
 
         System.out.println(names.toArray(new String[0])[2]); // Naim
 
-        System.out.println(new ArrayList<>(names).get(3));  // Shay
+        System.out.println(new ArrayList<>(names).get(2));  // Shay
 
         for (String  each : names){
             System.out.println(each);
