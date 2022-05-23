@@ -78,6 +78,13 @@ public class MapMethods {
         System.out.println(scores);
 
 
+        // entrySet --> key + value both are entry
+        for (Map.Entry<String, Integer> entry : students.entrySet()) {
+            System.out.println(entry);
+            System.out.println(entry.getKey()+" : "+ entry.getValue());
+
+        }
+
 
     }
 }

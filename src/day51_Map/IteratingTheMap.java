@@ -8,9 +8,9 @@ public class IteratingTheMap {
 
         Map<String,Integer> students=new HashMap<>();
 
-        students.put("Aygun",85);
+        students.put("Aygun",95);
         students.put("Maria",89);
-        students.put("Serkan",78);
+        students.put("Serkan",98);
         students.put("Alex",87);
         students.put("Ali",90);
 
@@ -95,6 +95,27 @@ public class IteratingTheMap {
         System.out.println(max);
         System.out.println(min);
 
+        System.out.println("----------------------------------------------------------");
+
+        // how many students has the score of 95 or greater
+        int count=0;
+        for (Integer eachScore : students.values()) {
+
+            if(eachScore>=95){
+                count++;
+            }
+        }
+        System.out.println("number of  95 or greater scores: "+count);
+
+        System.out.println("----------------------------------------------------------");
+
+        // entrySet --> key + value both are entry
+
+        for (Map.Entry<String, Integer> entry : students.entrySet()) {
+            System.out.println(entry);
+            System.out.println(entry.getKey()+" : "+ entry.getValue());
+
+        }
 
     }
 
