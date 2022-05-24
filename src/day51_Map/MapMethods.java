@@ -68,7 +68,7 @@ public class MapMethods {
         // =========================================================================================
 
 
-        // keyset --> return an Set <> list of keys
+        // keySet --> return an Set <> list of keys
         Set<String> keys=students.keySet();
         System.out.println(keys);
 
