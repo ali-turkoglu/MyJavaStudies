@@ -2,6 +2,8 @@ package day51_Map;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Map;
+import java.util.TreeMap;
 
 public class MapPractice4 {
 
@@ -25,5 +27,26 @@ public class MapPractice4 {
 
 
         // pair: Id & names of students
+
+        Map<Integer,ArrayList<String >> groups=new TreeMap<>();
+
+        groups.put(1,group1);
+        groups.put(2,group2);
+        groups.put(9,group9);
+        groups.put(24,group24);
+        groups.put(5,group5);
+
+        System.out.println(groups);
+
+        // to displayed group9 members in seperate line
+        for (String each : groups.get(9)) {
+            System.out.println(each);
+        }
+
+        // to displayed second member of group9
+        System.out.println(groups.get(9).get(1));
+        //                 arraylist       |_ arraylist methods
+
+
     }
 }
