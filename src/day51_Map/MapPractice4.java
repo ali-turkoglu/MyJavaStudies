@@ -47,6 +47,14 @@ public class MapPractice4 {
         System.out.println(groups.get(9).get(1));
         //                 arraylist       |_ arraylist methods
 
+        System.out.println("----------------------------------------------------------------");
+
+        for (ArrayList<String> eachGroup : groups.values()) {
+            for (String eachName : eachGroup) {
+                System.out.println(eachName);
+            }
+        }
+
 
     }
 }
