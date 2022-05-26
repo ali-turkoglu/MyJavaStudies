@@ -97,6 +97,54 @@ public class BuildInFunctionalInterface1 {
         int[] result2 = convertToArray.apply(numbers);
         System.out.println(Arrays.toString(result2));
 
+        System.out.println("-------------------------------------------");
+
+        // create a function that can return the maximum number from an int array
+
+        Function<int[],Integer> maxNumber= a -> {
+            Integer max=Integer.MIN_VALUE;
+            for (int each : a) {
+                if (each>max){
+                    max=each;
+                }
+            }
+            return max;
+        };
+
+        int[] test={1,23,51,30,26,45,84,45,24,87};
+        System.out.println(maxNumber.apply(test));
+
+        System.out.println("------------------------------------------------------------------");
+
+        // create a function that can swap the first and last elements of an array
+
+        Function<int[],int[]> swapFirstAndLast= a -> {
+
+            int temp=a[0];
+            a[0]=a[a.length-1];
+            a[a.length-1]=temp;
+            return a;
+        };
+        System.out.println(Arrays.toString(swapFirstAndLast.apply(test)));
+
+        System.out.println("---------------------------------------------------------------");
+
+
+        // Create a function that can reverse an array and returns it
+        Function<int[],int[]> reverseArray= a -> {
+            int[] result3=new int[a.length];
+            for (int i = a.length - 1,j=0; i >= 0; i--,j++) {
+                result3[j]=a[i];
+            }
+            return result3;
+        };
+        System.out.println(Arrays.toString(reverseArray.apply(test)));
+
+
+        // create a function that can reverse a List
+
+
+
 
 
     }
