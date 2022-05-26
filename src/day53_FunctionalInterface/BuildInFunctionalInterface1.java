@@ -127,7 +127,7 @@ public class BuildInFunctionalInterface1 {
         };
         System.out.println(Arrays.toString(swapFirstAndLast.apply(test)));
 
-        System.out.println("---------------------------------------------------------------");
+        System.out.println("==================================================================");
 
 
         // Create a function that can reverse an array and returns it
