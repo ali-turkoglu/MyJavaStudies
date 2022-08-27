@@ -784,5 +784,29 @@ public class ArraysUtility {
         return list;
     }
 
+    //sort given String array from shortLength first, returns new sorted array
+    public static String [] sortStringArray(String [] strArr){
+        int numberOfStep= strArr.length-1;
+
+        for (int i = 0; i < strArr.length - 1; i++) {
+
+            numberOfStep--;
+
+            for (int j = 0; j < numberOfStep; j++) {
+
+                String temp = "";
+
+                if (strArr[j].length() > strArr[j + 1].length()) {
+
+                    temp = strArr[j];
+                    strArr[j] = strArr[j + 1];
+                    strArr[j + 1] = temp;
+                }
+            }
+
+        }
+        return strArr;
+    }
+
 
 }
