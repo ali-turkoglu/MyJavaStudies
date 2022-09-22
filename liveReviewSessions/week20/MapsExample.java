@@ -3,6 +3,8 @@ package week20;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
+import static test.Armstrong.*;
+
 public class MapsExample {
 
     public static void main(String[] args) {
@@ -17,6 +19,8 @@ public class MapsExample {
 
         Map<String , Object> empTwo = new LinkedHashMap<>();
 
+        //test a number is Arstrong or not (it is not related with this page)
+        isArmstrong(122);
 
     }
 }
