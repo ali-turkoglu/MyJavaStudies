@@ -22,6 +22,7 @@ public class Calculator {
             ch=input.next().charAt(0);
         }
 
+
         if (ch=='+'){
             result=num1+num2;
         }else {
